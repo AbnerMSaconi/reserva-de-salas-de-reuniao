@@ -1,0 +1,23 @@
+{
+  "name": "CRUD Reservas",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "dotnet.defaultSolution": ""
+      },
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-mssql"
+      ]
+    }
+  },
+  "forwardPorts": [8080, 1433],
+  "remoteUser": "root"
+}
